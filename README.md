@@ -14,13 +14,16 @@ Create a new Java project called Classroom and populate with a class called Arra
   
 6）Only names that appear in the bag at least once should be included.  
 
+
+  
+
 RESULT:
   
 100 students generated:
 
 The following names appear 13 times and have been removed: 
 
-    Jack
+    JACK
 
 87 students remaining
 
