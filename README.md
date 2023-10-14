@@ -13,36 +13,4 @@ Create a new Java project called Classroom and populate with a class called Arra
 5）﻿﻿﻿Generate a table of all remaining names with the number of times that they appear.    
   
 6）Only names that appear in the bag at least once should be included.  
-
-
-  
-
-RESULT:
-  
-100 students generated:
-
-The following names appear 13 times and have been removed: 
-
-    JACK
-
-87 students remaining
-
-Name       Count
------------------
-Emily      11   
-
-Bob        8    
-
-Grace      11   
-
-Alice      10   
-
-Charlie    9    
-
-David      8    
-
-Isabella   11   
-
-Frank      9    
-
-Henry      10   
+<img width="436" alt="截屏2023-10-14 18 36 37" src="https://github.com/Jacka10086/A3-challenge-C410/assets/111729221/307ea7e9-6b9f-4522-8bed-8b8e11308ba3">
