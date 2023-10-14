@@ -14,5 +14,5 @@ Create a new Java project called Classroom and populate with a class called Arra
   
 6）Only names that appear in the bag at least once should be included.  
 
-OUTCOME；
+OUTCOME：
 <img width="436" alt="截屏2023-10-14 18 36 37" src="https://github.com/Jacka10086/A3-challenge-C410/assets/111729221/307ea7e9-6b9f-4522-8bed-8b8e11308ba3">
