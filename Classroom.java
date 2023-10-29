@@ -1,21 +1,28 @@
-package A3CH;
+import java.util.Random;
 
 public class Classroom {
+
     public static void main(String[] args) {
-    String[] studentNames = {"Alice", "Bob", "Charlie", "David", "Emily", "Frank", "Grace", "Henry", "Isabella", "Jack"};
-    ArrayBag bag = new ArrayBag();
-    int totalStudents = 100;
-    for (int i = 0; i < totalStudents; i++) {
-        int index = (int) (Math.random() * studentNames.length);
-        bag.add(studentNames[index]);
-    }
-    System.out.println("\n100 students generated:\n");
-    String mostFrequentName = bag.findMostFrequentName();
-    String[] mostFrequentNames = mostFrequentName.split(", ");
-    int remainingStudents = totalStudents - bag.getFrequencyOf(mostFrequentName);
-    System.out.println("\n" + remainingStudents + " students remaining\n");
-    bag.displayRemainingNames(remainingStudents);
-    }
 
+        String[] names = { "Adrian", "Bea", "Colin", "Deborah", "Eric", "Freida", "Gary", "Harriet", "Ian", "Janet" };
+        ArrayBag students = new ArrayBag(capacity: 100);
+        Random random = new Random();
 
+        for (int i = 0; i < 100; i++) {
+            students.addNewEntry(names[random.nextInt(names.length)]);
+        }
+
+        System.out.printf("%d students generated\n", students.getCurrentSize());
+
+        int mostFrequent = 0;
+        for (String name : names) {
+            if (students.getFrequencyOf(name) > mostFrequent)
+                mostFrequent = students.getFrequencyOf(name);
+        }
+
+        System.out.printf("\nThe following names appear %d times and have been removed\n", mostFrequent);
+        for (String name : names) {
+            // 这里似乎遗漏了一部分逻辑
+        }
+    }
 }
