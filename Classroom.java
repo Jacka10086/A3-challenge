@@ -3,11 +3,8 @@ import java.util.Random;
 public class Classroom {
 
     public static void main(String[] args) {
-        String[] names = {
-            "Adrian", "Bea", "Colin", "Deborah", "Eric",
-            "Freida", "Gary", "Harriet", "Ian", "Janet"
-        };
-        
+
+        String[] names = { "Adrian", "Bea", "Colin", "Deborah", "Eric", "Freida", "Gary", "Harriet", "Ian", "Janet" };
         ArrayBag students = new ArrayBag(100);
         Random random = new Random();
 
@@ -28,19 +25,17 @@ public class Classroom {
         for (String name : names) {
             if (students.getFrequencyOf(name) == mostFrequent) {
                 System.out.println(name);
-                while (students.contains(name)) {
-                    students.remove(name);
-                }
+                while (students.contains(name)) students.remove(name);
             }
         }
 
         System.out.printf("\n%d students remaining\n\n", students.getCurrentSize());
 
-        System.out.printf("%-10s %-5s\n", "Name", "Count");
+        System.out.printf("%-10s %-5s \n", "Name", "Count");
         System.out.println("----------");
         for (String name : names) {
             if (students.getFrequencyOf(name) > 0) {
-                System.out.printf("%-10s %-5d\n", name, students.getFrequencyOf(name));
+                System.out.printf("%-10s %-5d \n", name, students.getFrequencyOf(name));
             }
         }
     }
