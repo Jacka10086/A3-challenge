@@ -1,22 +1,22 @@
-package A3CH;
+package Assignments.Com410.A3.A3CH;
 
-public interface BagInterface<T> {
+public interface BagInterface {
     
     public int getCurrentSize();
     
     public boolean isEmpty();
     
-    public boolean add(T newEntry);
+    public boolean add(String newEntry);
     
-    public T remove();
+    public boolean remove();
     
-    public boolean remove(T anEntry);
+    public boolean remove(String anEntry);
     
     public void clear();
     
-    public int getFrequencyOf(T anEntry);
+    public int getFrequencyOf(String anEntry);
     
-    public boolean contains(T anEntry);
+    public boolean contains(String anEntry);
     
-    public T[] toArray();
+    public String[] toArray();
 }
