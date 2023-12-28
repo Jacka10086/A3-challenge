@@ -13,7 +13,6 @@ public class Classroom {
         for (int i = 0; i < 100; i++) {
             students.add(names[random.nextInt(names.length)]);
         }
-
         System.out.printf("%d students generated\n", students.getCurrentSize());
 
         int mostFrequent = 0;
