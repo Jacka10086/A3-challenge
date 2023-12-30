@@ -21,7 +21,6 @@ public class Classroom {
                 mostFrequent = students.getFrequencyOf(name);
             }
         }
-
        System.out.printf("\n The following names appear %d times and have been removed\n", mostFrequent);
 for (String name : names) {
     if (students.getFrequencyOf(name) == mostFrequent) {
