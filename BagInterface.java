@@ -18,5 +18,5 @@ public interface BagInterface {
     
     public boolean contains(String anEntry);
     
-    public String[] toArray();
+    public String[] toArray(); 
 }
